@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="A new Flutter project.">
+
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="pxWeb">
+
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/px-logo.png" />
+
+    <title>PX Portal</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('flutter_service_worker.js');
+            });
+        }
+    </script>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-functions.js"></script>
+    <!--    <script src="./firebase-config.js"></script>-->
+
+    <!-- <script >
+        var firebaseConfig = {
+            apiKey: "AIzaSyCl1HZsHK8Uh2cPMr5nwWC4eRcKFUWlkeA",
+            authDomain: "px-platform.firebaseapp.com",
+            databaseURL: "https://px-platform.firebaseio.com",
+            projectId: "px-platform",
+            storageBucket: "px-platform.appspot.com",
+            messagingSenderId: "907799038777",
+            appId: "1:907799038777:web:82e7b40bec8012e280b6e8",
+            measurementId: "G-8XKDDRPE5T"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script> -->
+    <script src="config.js"></script>
+    <script src="main.dart.js" type="application/javascript"></script>
+
+
+</body>
+
+</html>
